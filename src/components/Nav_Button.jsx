@@ -1,15 +1,14 @@
-import { useEffect } from 'react';
-import '../assets/css/nav.css';
+// import { useEffect } from 'react';
 // import { navJs } from '../assets/js/nav.js';
 
-export function addScript() {
+/* export function addScript() {
   const script = document.createElement('script');
   script.src = '../assets/js/nav.js';
   script.async = true;
   script.defer = true;
   script.onload = () => this.scriptLoaded();
   document.body.appendChild(script);
-}
+} */
 
 const Nav_Button = () => {
 /*   useEffect(() => {
@@ -38,7 +37,7 @@ const Nav_Button = () => {
   return (
     <button className="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">
       <span className="sr-only">Menu</span>
-      {addScript()}
+      {/* {addScript()} */}
     </button>
   )
 }

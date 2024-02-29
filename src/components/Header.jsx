@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
-import '../assets/css/nav.css';
+// import { useEffect } from 'react';
 
 import Nav_Logo from './Nav_Logo';
-import Nav_Button from './Nav_Button';
+// import Nav_Button from './Nav_Button';
 import Navigation from './Navigation';
 
 const Header = () => {
@@ -22,7 +21,8 @@ const Header = () => {
 
   return (
     <>
-      <Nav_Button />
+      {/* Nav_Button is now included in Navigation component */}
+      {/* <Nav_Button /> */}
       <Nav_Logo />
       <Navigation />
     </>

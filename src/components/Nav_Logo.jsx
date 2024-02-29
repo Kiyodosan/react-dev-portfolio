@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
-// import '../assets/css/nav.css';
+// import { useEffect } from 'react';
 
 const Nav_Logo = () => {
-  useEffect(() => {
+/*   useEffect(() => {
     const script = document.createElement('script');
 
     script.src = '../assets/js/nav.js';
@@ -13,7 +12,8 @@ const Nav_Logo = () => {
     return () => {
       document.body.removeChild(script);
     }
-  }, []);
+  }, []); */
+
   return (
     <div>
       <img src="../assets/images/" alt="brand logo" className="nav-logo" />
