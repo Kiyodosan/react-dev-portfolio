@@ -1,22 +1,9 @@
-// import { useEffect } from 'react';
+import brandLogo from "../assets/images/Kiyodo Logo - Watermark Ver. (150x150).jpg"
 
 const Nav_Logo = () => {
-/*   useEffect(() => {
-    const script = document.createElement('script');
-
-    script.src = '../assets/js/nav.js';
-    script.defer = true;
-
-    document.body.appendChild(script);
-  
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, []); */
-
   return (
     <div>
-      <img src="../assets/images/" alt="brand logo" className="nav-logo" />
+      <img src={brandLogo} alt="brand logo" className="nav-logo" />
     </div>
   )
 }

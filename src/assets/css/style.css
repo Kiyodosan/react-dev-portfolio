@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -18,7 +18,23 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
+#devName {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.active {
+  background-color: #747bff;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.preview-image {
+  height: 100px;
+  width: 150px;
+  min-width: 150px;
+}
+
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -29,10 +45,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -57,7 +71,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -70,4 +84,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}

@@ -31,17 +31,20 @@ body {
 }
 
 .bg-image {
-  background-image: url('assets/images/hs-bg-image.jpg');
+  background-image: url('../images/8ed6f459-dac9-4b59-ba48-3442d4c6a58d.jpg');
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  filter: grayscale(100%);
 }
 
 /* primary header */
 .nav-logo {
-  margin: 2rem;
+  /* margin modified to fit #devName (see style.css) */
+  /* margin: 2rem; */
+  margin: 1rem;
   width: 3rem;
 }
 
@@ -80,13 +83,8 @@ body {
   margin-inline-end: .75em;
 }
 
-/* //// Does the same thing as the CSS class above, but targets span elements instead. */
-/* .privary-nav a > span {
-  font-weight: 700;
-  margin-inline-end: .75em;
-} */
-
-@media (max-width: 35em) {
+/* @media (max-width: 35em) { */
+@media (max-width: 706px) {
   .primary-nav {
     --gap: 2rem;
 
@@ -118,7 +116,7 @@ body {
     border: 0;
     aspect-ratio: 1;
     /* May need to change "top" and "right" position to center navbar menu button with different logo sizes */
-    top: 3rem;
+    top: 1.5rem;
     right: 2rem;
   }
 
@@ -127,10 +125,13 @@ body {
   }
 }
 
-@media (min-width: 35em) {
+/* @media (min-width: 35em) { */
+@media (min-width: 706px) {
   .primary-nav {
     --gap: clamp(1.5rem, 5vw, 3rem);
-    padding-block: 1rem;
+    /* padding-block modified to fit #devName (see style.css) */
+    /* padding-block: 1rem; */
+    padding-block: 0.5rem;
     padding-inline: clamp(3rem, 7vw, 10rem);
   }
 }

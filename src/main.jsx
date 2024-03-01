@@ -1,4 +1,3 @@
-// import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -6,7 +5,7 @@ import './assets/css/style.css'
 import './assets/css/nav.css'
 
 import App from './App.jsx'
-// import Error from './pages/Error'
+import Error from './pages/Error'
 import About_Me from './pages/About_Me'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
@@ -16,7 +15,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    // errorElement: <Error />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
@@ -28,7 +27,6 @@ const router = createBrowserRouter([
         element: <About_Me />,
       }, */
       {
-        // path: '/Portfolio',  // Does not route properly
         path: 'portfolio',
         element: <Portfolio />,
       },

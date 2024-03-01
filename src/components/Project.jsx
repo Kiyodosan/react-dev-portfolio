@@ -1,8 +1,31 @@
-import React from 'react'
+import { getWindowSize } from "../utils/getWindowSize"
 
-const Project = () => {
+const Project = ({project}) => {  
+  const windowSize = getWindowSize();
+
   return (
-    <div>Project</div>
+    <div className={windowSize >= 706 ? "flex w-2/5" : "flex w-4/5"}>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={project.url}
+      >
+        <img
+          className="preview-image "
+          src={
+            project.image
+          }
+          alt={
+            project.name
+          }
+        />
+      </a>
+      <p className="w-4/5">
+        {
+          project.description
+        }
+      </p>
+    </div>
   )
 }
 

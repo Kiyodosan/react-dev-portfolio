@@ -1,31 +1,15 @@
-// import { useEffect } from 'react';
-
 import Nav_Logo from './Nav_Logo';
-// import Nav_Button from './Nav_Button';
 import Navigation from './Navigation';
 
 const Header = () => {
-  // Not sure if useEffect should be used only once or every time rerender occurs
-/*   useEffect(() => {
-    const script = document.createElement('script');
-
-    script.src = '../assets/js/nav.js';
-    script.defer = true;
-
-    document.body.appendChild(script);
-  
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, []); */
-
   return (
-    <>
-      {/* Nav_Button is now included in Navigation component */}
-      {/* <Nav_Button /> */}
-      <Nav_Logo />
-      <Navigation />
-    </>
+    <div>
+      <div className="flex items-center justify-between">
+        <Nav_Logo />
+        <Navigation />
+      </div>
+      <h2 id="devName" className="mb-4 flex justify-center font-bold text-3xl">Tyler Odo</h2>
+    </div>
   )
 }
 

@@ -1,8 +1,15 @@
-// import React from 'react'
+import Project from '../components/Project'
+import { projects } from '../utils/projects'
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <div className="flex flex-wrap justify-center">
+      {projects.map(project => {
+        return (
+          <Project key={project.id} project={project} />
+        )
+      })}
+    </div>
   )
 }
 
