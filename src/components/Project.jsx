@@ -12,19 +12,25 @@ const Project = ({project}) => {
       >
         <img
           className="preview-image"
-          src={
-            project.image
-          }
-          alt={
-            project.name
-          }
+          src={project.image}
+          alt={project.name}
         />
       </a>
-      <p className="w-4/5">
-        {
-          project.description
-        }
-      </p>
+      <div>
+        <p>
+          {project.description}
+        </p>
+        <div className="mt-1">
+          <p className="text-black font-bold">GitHub: </p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={project.githubUrl}
+          >
+            {project.name}
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

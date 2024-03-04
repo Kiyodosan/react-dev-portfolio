@@ -4,6 +4,9 @@ const About_Me = () => {
       <div className="flex justify-center mb-16">
         <h1 className="px-4 text-6xl font-bold text-red-500 font-sans">Tyler Odo</h1>
       </div>
+      <div className="flex justify-center mb-16">
+        <img src="src/assets/images/Profile Pic.jpg" alt="profile picture" className="rounded-full max-w-56" />
+      </div>
       <div className="mx-auto max-w-[70svw] rounded-lg bg-clip-padding bg-gradient-to-b from-sky-500 via-cyan-500 via-blue-500 to-amber-300">
         <section className="p-2 border-2 border-slate-400 rounded-lg">
           <h2 className="px-4 py-1 flex justify-center bg-slate-600 border-2 border border-blue-400 rounded-lg font-extrabold font-sans">Programmer | Web Developer | Content Creator | Marketer | Video / Photo Editor</h2>

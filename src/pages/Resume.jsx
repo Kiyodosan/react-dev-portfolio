@@ -5,7 +5,13 @@ const Resume = () => {
         <h1 className="justify-self-center px-4 text-6xl font-bold text-red-500 font-sans">Resume</h1>
       </div>
       <section className="flex justify-center px-4">
-        <img src="src/assets/images/developer career resume.jpg" alt="developer career resume" />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1GeNKeU-8mAw47jG6ub4SFXloNgW9jq_VMJm3fXy0NwA/edit?usp=sharing"
+        >
+          <img src="src/assets/images/developer career resume.jpg" alt="developer career resume" />
+        </a>
       </section>
       <div className="flex justify-center">
         <section className="px-8 my-16 font-bold flex flex-wrap">
