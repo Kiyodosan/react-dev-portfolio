@@ -1,20 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-// import { getWindowSize } from '../utils/getWindowSize'
 
 const Navigation = () => {
-  // const windowSize = getWindowSize();
-  //// console.log(getWindowSize());
-
-/*   //// Nav menu is opened by default if width is under 706px. Not intended
-  const [visibility, setVisibility] = useState(() => {
-    if (windowSize >= 706) {
-      return false;
-    } else {
-      return true;
-    }
-  }); */
-
   // Defaults collapsible nav menu to closed
   const [visibility, setVisibility] = useState(false);
 

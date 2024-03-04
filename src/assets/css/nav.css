@@ -18,11 +18,6 @@ body {
   gap: var(--gap, 1rem);
 }
 
-/* .grid {
-  display: grid;
-  gap: var(--gap, 1rem);
-} */
-
 .text-black {
   color: black;
 }

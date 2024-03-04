@@ -48,7 +48,7 @@ const Project = ({project}) => {
           {project.description}
         </p>
         <div className="mt-1">
-          <p className="text-black font-bold">GitHub: </p>
+          <p className="text-black font-bold">GitHub:</p>
           <a href={project.githubUrl}>
             {project.name}
           </a>
