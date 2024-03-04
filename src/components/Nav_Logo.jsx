@@ -2,8 +2,8 @@ import brandLogo from "../assets/images/Kiyodo Logo - Watermark Ver. (150x150).j
 
 const Nav_Logo = () => {
   return (
-    <div>
-      <img src={brandLogo} alt="brand logo" className="nav-logo" />
+    <div className="flex items-center">
+      <img src={brandLogo} alt="brand logo" className="nav-logo rounded-full" />
     </div>
   )
 }

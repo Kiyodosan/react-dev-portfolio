@@ -5,7 +5,7 @@ const Error = () => {
   console.log(error);
 
   return (
-    <div>
+    <div className="flex flex-col items-center my-[50svh]">
       <p>An error has occured</p>
       <p>
         <i>{error.statusText || error.message}</i>

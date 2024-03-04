@@ -4,14 +4,14 @@ const Project = ({project}) => {
   const windowSize = getWindowSize();
 
   return (
-    <div className={windowSize >= 706 ? "flex w-2/5" : "flex w-4/5"}>
+    <div className={windowSize > 706 ? "p-4 mx-4 w-[80svw] flex items-center border-2 border-blue-400 rounded-lg bg-slate-600" : "p-4 mx-4 w-full flex flex-wrap w-4/5 justify-center items-center border-2 border-blue-400 rounded-lg bg-slate-600"}>
       <a
         target="_blank"
         rel="noreferrer"
         href={project.url}
       >
         <img
-          className="preview-image "
+          className="preview-image"
           src={
             project.image
           }
