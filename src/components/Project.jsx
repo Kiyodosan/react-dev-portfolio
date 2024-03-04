@@ -36,11 +36,7 @@ const Project = ({project}) => {
     
   return (
     <div className={windowSize > 706 ? "p-4 mx-4 w-[80svw] flex items-center border-2 border-blue-400 rounded-lg bg-slate-600" : "p-4 mx-4 flex flex-col w-4/5 justify-center items-center border-2 border-blue-400 rounded-lg bg-slate-600"}>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href={project.url}
-      >
+      <a href={project.url}>
         <img
           className="preview-image"
           src={imgThumb}
@@ -53,11 +49,7 @@ const Project = ({project}) => {
         </p>
         <div className="mt-1">
           <p className="text-black font-bold">GitHub: </p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={project.githubUrl}
-          >
+          <a href={project.githubUrl}>
             {project.name}
           </a>
         </div>
