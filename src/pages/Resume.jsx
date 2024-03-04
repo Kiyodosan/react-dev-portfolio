@@ -1,3 +1,5 @@
+import resumeImg from "../assets/images/developer career resume.jpg"
+
 const Resume = () => {
   return (
     <div>
@@ -10,7 +12,7 @@ const Resume = () => {
           rel="noreferrer"
           href="https://docs.google.com/document/d/1GeNKeU-8mAw47jG6ub4SFXloNgW9jq_VMJm3fXy0NwA/edit?usp=sharing"
         >
-          <img src="src/assets/images/developer career resume.jpg" alt="developer career resume" />
+          <img src={resumeImg} alt="developer career resume" />
         </a>
       </section>
       <div className="flex justify-center">
